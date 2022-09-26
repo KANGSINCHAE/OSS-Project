@@ -21,7 +21,7 @@
 <h3>5-2.2 저장소 생성</h3>
 공개용 저장소는 무제한으로 생성해서 사용할 수 있다. 비공개용은 제약이 조금 있으며 일부는 유료 서비스입니다.<br>
 New repository를 선택하여 저장소를 생성하며, 생성할 때 소유자(Owner)를 선택합니다. 한 소유자 안에서 같은 저장소 이름은 중복하여 생성할 수 없습니다.<br><br>
-<img src="https://github.com/KANGSINCHAE/OSS-Project/tree/main/images/image01.png"/>
+<img src="https://user-images.githubusercontent.com/113485036/192177817-571e2034-50ac-4a2e-8046-29b4a26f782b.png">
 <h1>5-3. 깃허브 연동 및 원격 등록</h1>
 <h3>5-3.1. 로컬 저장소</h3>
 원격 저장소에 연결하려면 먼저 로컬 저장소가 있어야 합니다. 로컬 저장소를 원격 저장소에 연결하는 방법은 크게 2가지입니다.<br>
@@ -45,14 +45,18 @@ New repository를 선택하여 저장소를 생성하며, 생성할 때 소유�
 <h3>5-3.3. 원격 저장소의 리모트 목록 관리</h3>
 깃은 원격 저장소를 관리하는 데 remote 명령어를 사용. <br>Remote 명령어를 사용하면 현재 연결된 원격 저장소 목록을 확인할 수 있다. 동시에 등록과 취소 등 작업을 할 수 있다.<br>
 Remote 명령어를 독립적으로 사용하면 연결된 원격 저장소의 이름을 출력.<br><br>
-git remote<br>
--git remote -v : 원격 저장소의 별칭 이름과 URL을 확인할 수 있다.<br>
+- git remote<br>
+<img src="https://user-images.githubusercontent.com/113485036/192177820-66647f43-f4b7-4cb7-ab19-0927a1c90eed.png">
+- git remote -v : 원격 저장소의 별칭 이름과 URL을 확인할 수 있다.<br>
+<img src="https://user-images.githubusercontent.com/113485036/192177825-a015a868-7afb-4ef6-be29-684704f8bc51.png">
 깃은 복수의 원격 저장소를 연결하여 사용 가능. 저장소의 권한 정보까지는 알 수 없다.<br><br>
 
 <h3>5-3.4. 주소와 별칭</h3>
 로컬 저장소에 원격 저장소를 등록하려면 서버 주소가 필요. <br>깃허브 같은 저장소는 프로토콜 + 도메인 주소 형태로 되어있다. 로컬에 서버 저장소를 생성할 때는 폴더 경로를 사용할 수 있다.<br><br>
 -별칭 : 간략하게 긴 서버 URL 문자열을 별칭으로 만들어 사용 가능<br>
 -origin : 대표적으로 사용하는 별칭. 기본적으로 원격 서버와 연결할 때 별칭으로 많이 사용.<br><br>
+<img src="https://user-images.githubusercontent.com/113485036/192177826-accdb082-8cf8-48a9-9bfb-131578b28f36.png">
+<img src="https://user-images.githubusercontent.com/113485036/192177828-efcf50b7-c5c8-4275-911c-149aaf53dc2a.png">
 
 <h3>5-3.5. 원격 저장소에 연결</h3>
 원격 저장소와 연결하려면 add 옵션 사용. (git remote add 원격저장소별칭 원격저장소URL<br>
@@ -78,13 +82,16 @@ push는 원격 저장소로 커밋된 파일들을 업로드하는 동작.<br>
 원격 저장소로 로컬 깃 저장소의 내용을 전송할 때는 push 명령어를 사용<br>
 -git push 원격저장소별칭 브랜치이름<br>
 별칭 이름을 가지는 서버의 master 브랜치에 현재 브랜치를 업로드<br><br>
+<img src="https://user-images.githubusercontent.com/113485036/192177832-2e1705c5-31d2-4c26-a911-a2cb90bb1a72.png">
 
 <h3>5-5.1. clone: 복제</h3>
 clone 명령어는 초기화 init 명령어 외에 원격 서버 접속에 필요한 추가 설정을 자동으로 수행.<br>
 서버의 연결 설정을 마친 후 서버 안에 있는 모든 커밋된 코드 이력들을 한 번에 내려받는다.<br>
+<img src="https://user-images.githubusercontent.com/113485036/192177835-ff4a936b-b355-484f-8a28-61d6950d21d9.png">
 <br>
 <h3>5-5.2. pull: 서버에서 내려받기</h3>
 복제 후 원격 저장소의 갱신된 내용을 추가로 내려받으려면 pull 명령어를 사용<br>
+<img src="https://user-images.githubusercontent.com/113485036/192177829-03d454e1-13e8-4698-94d0-94851bc8642b.png">
 <br>
 <h1>5-6 수동으로 내려받기</h1>
 원격 저장소 내용을 내려받는 방법은 크게 2가지. pull과 fetch. 2개 방법 차이는 병합을 자동 처리하는지 여부.<br>
@@ -114,4 +121,6 @@ fetch는 데이터를 내려받기만 할 뿐 자동 병합하지 않는다. <br
 깃이 최신 상태에서만 푸시를 허용하는 것은 충돌을 방지하기 위함. <br>원격 저장소의 커밋을 내려받는 풀 작업은 내려받은 커밋들을 현재 브랜치로 자동 병합. 이때 커밋 내용이 순차적이지 않으면 병합 과정에서 충돌 발생<br>
 pull -> coding -> commit -> pull -> push (해당 순서를 권장)<br>
 풀과 푸시를 자주 하여 충돌을 최소한으로 줄여 나가면서 작업을 유지<br>
+<img src="https://user-images.githubusercontent.com/113485036/192177836-68bb22e6-2fd4-4b4c-bcc8-434c67069b70.png">
+<img src="https://user-images.githubusercontent.com/113485036/192177838-787103df-3759-4ccc-b6a7-d463a23c6e58.png">
 <br>
