@@ -123,5 +123,4 @@ pull -> coding -> commit -> pull -> push (해당 순서를 권장)<br>
 풀과 푸시를 자주 하여 충돌을 최소한으로 줄여 나가면서 작업을 유지<br>
 <img src="https://user-images.githubusercontent.com/113485036/192177836-68bb22e6-2fd4-4b4c-bcc8-434c67069b70.png">
 <img src="https://user-images.githubusercontent.com/113485036/192177838-787103df-3759-4ccc-b6a7-d463a23c6e58.png">
-<img src="https://user-images.githubusercontent.com/101856066/192454078-c2353557-c90b-478b-a03d-87d34c21d209.jpg">
 <br>
