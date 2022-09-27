@@ -105,10 +105,12 @@ pull명령어로 자동 병합을 하지 못할 때는 fetch 사용.<br>
 <h3>5-6.2 fetch: 가져오기</h3>
 fetch는 원격 저장소에서 코드를 수동으로 내려받는 작업. <br>fetch는 원격 저장소에서 커밋된 코드를 임시 브랜치로 내려받는다. 내려받은 후 현재 브랜치와 자동 병합하지 않는다.<br>
 -git fetch 원격저장소URL<br>
+<img src = "https://user-images.githubusercontent.com/101856066/192506097-f945a326-b519-4cfc-8735-294afc26a359.png">
 <br>
 <h3>5-6.3. merge 명령어로 수동 병합</h3>
 fetch는 데이터를 내려받기만 할 뿐 자동 병합하지 않는다. <br>내려받은 커밋을 로컬 저장소에 적용하려면 병합 명령을 실행해야 하는데 merge명령어를 사용.<br>
 -git merge 원격저장소별칭/브랜치이름<br>
+<img src ="https://user-images.githubusercontent.com/101856066/192506110-273e33df-ce04-470b-81e1-d93b95ca983a.png">
 <br>
 <h1>5-7. 순서</h1>
 여러 명이 협력해서 개발할 때는 순차적으로 푸시해야 한다.<br>
@@ -121,6 +123,4 @@ fetch는 데이터를 내려받기만 할 뿐 자동 병합하지 않는다. <br
 깃이 최신 상태에서만 푸시를 허용하는 것은 충돌을 방지하기 위함. <br>원격 저장소의 커밋을 내려받는 풀 작업은 내려받은 커밋들을 현재 브랜치로 자동 병합. 이때 커밋 내용이 순차적이지 않으면 병합 과정에서 충돌 발생<br>
 pull -> coding -> commit -> pull -> push (해당 순서를 권장)<br>
 풀과 푸시를 자주 하여 충돌을 최소한으로 줄여 나가면서 작업을 유지<br>
-<img src="https://user-images.githubusercontent.com/113485036/192177836-68bb22e6-2fd4-4b4c-bcc8-434c67069b70.png">
-<img src="https://user-images.githubusercontent.com/113485036/192177838-787103df-3759-4ccc-b6a7-d463a23c6e58.png">
 <br>
